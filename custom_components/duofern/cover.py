@@ -82,20 +82,20 @@ class DuofernShutter(CoverEntity):
 
     def open_cover(self):
         """roll up cover"""
-        self._stick.command(self._id, "up")
+        self._stick.command(self._id, "up timer")
 
     def close_cover(self):
         """close cover"""
-        self._stick.command(self._id, "down")
+        self._stick.command(self._id, "down timer")
 
     def stop_cover(self):
         """stop cover"""
-        self._stick.command(self._id, "stop")
+        self._stick.command(self._id, "stop timer")
 
     def set_cover_position(self, **kwargs):
         """set position (100-position to make the default intuitive: 0%=closed, 100%=open"""
         position = kwargs.get(ATTR_POSITION)
-        self._stick.command(self._id, "position", 100 - position)
+        self._stick.command(self._id, "position timer", 100 - position)
 
     def update(self):
         """Fetch new state data for this cover.
