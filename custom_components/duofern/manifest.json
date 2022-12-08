@@ -1,11 +1,11 @@
 {
   "domain": "duofern",
   "name": "Duofern control",
-  "documentation": "https://github.com/gluap/pyduofern-hacs",
+  "documentation": "https://github.com/benjaminBoehme/pyduofern-shutter-hacs",
   "dependencies": [],
   "config_flow": true,
-  "issue_tracker": "https://github.com/gluap/pyduofern-hacs/issues" ,
-  "codeowners": ["@gluap"],
+  "issue_tracker": "https://github.com/benjaminBoehme/pyduofern-shutter-hacs/issues" ,
+  "codeowners": ["@benjaminboehme"],
   "requirements": ["pyduofern==0.34.1"],
-  "version": "0.3.2"
+  "version": "0.0.1-alpha"
 }
